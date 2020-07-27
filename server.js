@@ -1,5 +1,5 @@
 const express = require('express');
-const PORT = process.env.PORT || 443;
+const PORT = 443;
 const app = express();
 const { animals } = require('./data/animals');
 
