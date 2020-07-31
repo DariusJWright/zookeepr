@@ -29,10 +29,11 @@ const getAnimals = (formData = {}) => {
     queryUrl += `${key}=${value}&`;
   });
 
-  console.log(queryUrl);
+  console.log('!UERYURL--> ', queryUrl);
 
   fetch(queryUrl)
     .then(response => {
+      console.log(`RESPONSE--->`, response)
       if (!response.ok) {
         return alert('Error: ' + response.statusText);
       }
