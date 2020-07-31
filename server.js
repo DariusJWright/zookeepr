@@ -7,7 +7,10 @@ const app = express();
 app.use(express.urlencoded({ extended: true}));
 // parse incoming JSON data
 app .use(express.json());
-const { animals } = require('./data/animals');
+//const { animals } = require('./data/animals.JSON');
+
+const animalsRaw = fs.readFileSync('./data/animals.JSON')
+const animals = JSON.parse(animalsRaw)
 app.use(express.static('public'));
 
 function filterByQuery(query, animalsArray) {
