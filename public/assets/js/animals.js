@@ -2,7 +2,7 @@ const $animalForm = document.querySelector('#animals-form');
 const $displayArea = document.querySelector('#display-area');
 
 const printResults = resultArr => {
-  console.log(resultArr);
+  console.log('RESULTARR---> ',resultArr);
 
   const animalHTML = resultArr.map(({ id, name, personalityTraits, species, diet }) => {
     return `
