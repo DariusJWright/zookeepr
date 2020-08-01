@@ -2,7 +2,7 @@ const fs = require('fs');
 const {
     filterByQuery,
     findById,
-    creatNewAnimal,
+    createNewAnimal,
     validateAnimal
 } = require("../lib/animals.js");
 const { animals } = require("../data/animals");
